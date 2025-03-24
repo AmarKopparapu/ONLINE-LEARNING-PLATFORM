@@ -37,3 +37,4 @@ Upon receiving the completion certificate at the internship’s conclusion, I fe
 
 https://drive.google.com/file/d/1pF2ZA4nB70sn-9MhoYgAhd9E6_NaVaUe/view?usp=sharing
 
+![Image](https://github.com/user-attachments/assets/e4a5a749-3989-4e53-bee2-8bf250d7ddfd)
