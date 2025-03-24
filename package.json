@@ -1,0 +1,13 @@
+{
+  "name": "online-learning-platform",
+  "version": "1.0.0",
+  "description": "A simple online learning platform with video lessons, quizzes, and progress tracking.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}

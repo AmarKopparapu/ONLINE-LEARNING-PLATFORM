@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>Online Learning Platform</h1>
+    <div id="user-status">
+      <span id="welcome-msg"></span>
+      <button id="logout-btn" style="display:none;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- Login Section -->
+  <div id="login-section">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="login-error" class="error"></div>
+  </div>
+
+  <!-- Content Section (visible after login) -->
+  <div id="content-section" style="display:none;">
+    <h2>Welcome, <span id="user-name"></span>!</h2>
+    
+    <!-- Video Lesson Section -->
+    <section id="video-lesson">
+      <h3>Lesson 1: Introduction to Online Learning</h3>
+      <!-- Ensure you place a lesson video in public/videos/lesson1.mp4 -->
+      <video id="lesson-video" controls>
+        <source src="videos/lesson1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="complete-lesson-btn">Mark as Completed</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section">
+      <h3>Quiz: Basics of Online Learning</h3>
+      <form id="quiz-form">
+        <p>Question: What does LMS stand for?</p>
+        <input type="radio" name="q1" value="Learning Management System" required> Learning Management System<br>
+        <input type="radio" name="q1" value="Local Media Service"> Local Media Service<br>
+        <input type="radio" name="q1" value="Light Message Service"> Light Message Service<br>
+        <button type="submit">Submit Quiz</button>
+      </form>
+      <div id="quiz-result"></div>
+    </section>
+
+    <!-- Progress Tracking Section -->
+    <section id="progress-section">
+      <h3>Your Progress</h3>
+      <div id="progress-display">
+      </div>
+      <button id="load-progress">Refresh Progress</button>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
